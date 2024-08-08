@@ -1,0 +1,38 @@
+{
+    "name": "buonic/laravel-wecom-notification-channel",
+    "description": "WeCom notification channel for Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Buonic",
+            "email": "buonic@example.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1|^8.0",
+        "guzzlehttp/guzzle": "^6.0|^7.0",
+        "illuminate/notifications": "~5.8.0|^6.0|^7.0|^8.0|^9.0|^10.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5|^9.5|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Buonic\\Notifications\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Buonic\\Notifications\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Buonic\\Notifications\\WeComChannelServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
